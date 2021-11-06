@@ -1,0 +1,53 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    padding: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+}
+img{
+    margin: 2rem 2rem 2rem 6rem;
+    width: 60px;
+    border: 3px solid white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+.profile{
+    display: flex;
+    background: rgb(116,214,144);
+    background: linear-gradient(311deg, rgba(116,214,144,1) 0%, rgba(92,191,187,1) 100%);
+}
+.info{
+    margin:10px;
+    padding: 0;
+}
+.card{
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 20px #f9f9f9;
+    transform: rotate(-5deg);
+    transition: transform 0.25s;
+}
+.name{
+    color: white;
+    margin:auto;
+    margin-left: 0;
+}
+
+.card:hover{
+    transform:rotate(0deg);
+}
+.card:hover img{
+    transform: scale(1.15);
+}
+
+@media screen and (min-width: 500px) {
+    .card{
+        width: 500px;
+    }
+    .info{
+        margin: 0;
+        padding: 20px 30px;
+    }
+}
